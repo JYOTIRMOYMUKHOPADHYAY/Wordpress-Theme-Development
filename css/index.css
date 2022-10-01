@@ -1,0 +1,431 @@
+/* body{
+    background-color: rgb(0, 0, 0);
+} */
+
+/* HEADER TOP */
+* {
+  font-family: "Vollkorn", Sans-serif;
+}
+p{
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 28px;
+  text-transform: none;
+  text-align: justify;
+  color: #000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-instagram {
+  padding-left: 20px;
+}
+
+.header_social,
+.header_toggle {
+  font-size: 20px;
+}
+
+/* HEADER DONE */
+
+/* CAROSOL START */
+.carosol_file {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#carouselExampleControls {
+  width: 100%;
+}
+
+
+#carouselExampleControls .carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  height: 90vh;
+}
+
+#carouselExampleControls .carousel-item:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 90vh;
+}
+
+/* CAROSOL END */
+
+/* WELCOME SECTION */
+.welcome_section {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+}
+
+.welcome_section {
+  /* opacity: 0.6; */
+  background-image: url(/assets/backbroung_welcome_section.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.section_name h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.section_icon {
+  max-width: 100%;
+  /* width: 264px; */
+  /* height: 50px; */
+}
+
+.section_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_body_content {
+  width: 30%;
+}
+
+/* .section_body_content p{
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    line-height: 28px;
+    text-transform: none;
+    text-align: justify;
+} */
+
+
+.section_body_content h2,
+h4 {
+  line-height: 1.4;
+}
+
+.section_body_image {
+  width: 45%;
+}
+
+.section_body_image img {
+  max-width: 100%;
+  width: 600px;
+  height: 510px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* responsive part */
+@media screen and (max-width: 880px) {
+  .section_body {
+    flex-wrap: wrap;
+  }
+
+  .section_body_content {
+    width: 100%;
+  }
+
+  .section_body_image {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 880px) {
+  .section_body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .section_body_content {
+    width: 40%;
+  }
+}
+
+/* MEET THE LADY BEHIND THE LENSE */
+.meet_the_lady{
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url('../assets/homepage_carosol/DSC_1601.jpg');
+  background-attachment:scrolling;
+}
+.meet_the_lady_header h2{
+  font-size: 2.5rem;
+    font-weight: 600;
+    color: lightgray;
+    text-align: center;
+}
+.meet_the_lady{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meet_the_lady_image img{
+  width: 100%;
+}
+.meet_the_lady_content .card-body{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+/* .meet_the_lady_image{
+  width: 40%;
+} */
+
+.meet_the_lady_image {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.meet_the_lady_image img {
+  max-width: 100%;
+  width: 600px;
+  height: 510px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.meet_the_lady_content_text{
+  width: 50%;
+}
+
+.meet_the_lady_content_text p{
+  width: 90%;
+}
+.meet_the_lady_content_text h2{
+  padding-bottom: 10px;
+}
+/* RESPONSIVE */
+@media screen and (max-width: 1042px) {
+  .card-body{
+    display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      
+  }
+  .meet_the_lady_image {
+    width: 100%;
+  }
+  .meet_the_lady_content_text{
+    width: 100%;
+    text-align: center;
+  }
+  .meet_the_lady_content_text p{
+    width: 100%;
+    padding: 20px;
+  }
+  .meet_the_lady_content_text h2{
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+}
+
+
+/* CATEGORY */
+#mu-about {
+	background-color: #fff;
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.mu-about-area {
+	display: inline;
+	float: left;
+	padding: 100px 0;
+	width: 100%;
+}
+
+.mu-about-left {
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.mu-about-right {
+	display: inline;
+	float: left;
+	margin-top: 35px;
+	width: 130%;
+	background-color: #fff;
+	padding: 40px;
+	margin-left: -175px;
+	box-shadow: 3px 1px 18px -9px #000;
+}
+
+.mu-about-right p {
+	font-size: 15px;
+}
+
+/* Gallary */
+.gallary_base{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  background-image: url(../assets/background_category.jpg);
+}
+.gallary_header{
+  padding-top: 20px;
+}
+.gallary_images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.individual_gallary_image{
+  width: 32%;
+}
+.individual_gallary_image img {
+  max-width: 100%;
+  width: 100%;
+  height: 510px;
+  object-fit: cover;
+  object-position: center;
+  margin-top: 20px;
+  box-shadow: 0px 1px 6px 0px;
+}
+.gallary_base .gallry_category{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+padding-top: 40px;
+}
+
+@media screen and (max-width: 1042px) {
+  .individual_gallary_image{
+    width: 47%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .individual_gallary_image{
+    width: 80%;
+  }
+  .gallary_images{
+    justify-content: center;
+    align-items: center;
+  }
+  .gallry_category{
+   flex-wrap: wrap;
+  }
+  .gallry_category button{
+    margin-top: 20px;
+   }
+}
+/* button hover effect */
+.gallary_base button {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 1.2rem;
+  border: 1px solid hsl(260, 90%, 40%);
+  border-radius: 0.35rem;
+  cursor: pointer;
+}
+
+.gallary_base button:hover {
+  animation-name: shine;
+  animation-duration: 260ms;
+}
+
+@keyframes shine {
+  0% {
+    background: linear-gradient(
+      30deg, 
+      hsl(260, 85%, 95%) 0%, 
+      hsl(260, 75%, 9%) 25%
+    );
+  }
+
+  25% {
+    background: linear-gradient(
+      30deg, 
+      hsl(260, 75%, 9%) 0%, 
+      hsl(260, 85%, 95%) 25%, 
+      hsl(260, 75%, 9%) 50%);
+  }
+
+  50% {
+    background: linear-gradient(
+      30deg,
+      hsl(260, 75%, 9%) 0%, 
+      hsl(260, 85%, 95%) 50%, 
+      hsl(260, 75%, 9%) 75%); 
+  }
+
+  75% {
+    background: linear-gradient(
+      30deg, 
+      hsl(260, 75%, 9%) 0%, 
+      hsl(260, 85%, 95%) 75%, 
+      hsl(260, 75%, 9%) 100%); 
+  }
+
+  100% {
+    background: linear-gradient(
+      30deg, 
+      hsl(260, 75%, 9%) 0%, 
+      hsl(260, 85%, 95%) 100%); 
+  }
+}
+
+/* SUCCESS STORIES */
+.success_stories{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.202);
+  background-image: url(../assets/homepage_carosol/DSC_1729.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 90px;
+}
+.success_stories_carosol{
+  width: 50%;
+}
+.card-body h5{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.success_stories_carosol .card{
+  background-color: rgba(255, 255, 255, 0.256);
+}
+
+
+
+
+/* FOOTER */
+.footer {
+  /* position: fixed; */
+  /* left: 0;
+  bottom: 0; */
+  width: 100%;
+  background-color: rgb(22, 16, 16);
+  color: white;
+  text-align: center;
+}

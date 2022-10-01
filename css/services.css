@@ -1,0 +1,141 @@
+/* body{
+    background-color: rgb(0, 0, 0);
+} */
+
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+/* HEADER TOP */
+* {
+  font-family: "Vollkorn", Sans-serif;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 28px;
+  text-transform: none;
+  text-align: justify;
+  color: #000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-instagram {
+  padding-left: 20px;
+}
+
+.header_social,
+.header_toggle {
+  font-size: 20px;
+}
+
+/* HEADER DONE */
+
+/* BANNER IMAGE */
+/* .banner_image{
+    height: 500px;
+    background-image: url(../assets/aboutus/banner_image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  } */
+
+
+.bannner_text {
+  position: relative;
+  height: 350px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../assets/aboutus/banner_image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  text-align: center;
+  /* opacity: 0.75; */
+}
+
+.bannner_text::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.29);
+}
+
+.bannner_text h2 {
+  opacity: 1;
+  z-index: 9999;
+}
+
+/* .banner_header{
+    display: flex;
+    flex-direction: column;
+} */
+
+.bannner_text p {
+  margin-top: 20px;
+  /* width: 50%; */
+}
+
+/* responsive */
+@media screen and (max-width: 880px) {
+  .bannner_text p {
+    margin-top: 20px;
+    width: 90%;
+  }
+}
+
+
+/* CAROSOL START */
+.service_img_carosol{
+  width: 50%;
+}
+.carosol_file {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#carouselExampleControls {
+  width: 100%;
+}
+
+
+#carouselExampleControls .carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  height: 60vh;
+}
+
+#carouselExampleControls .carousel-item:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 60vh;
+}
+
+/* CAROSOL END */
+.service_details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.service_data{
+  width: 40%;
+}
