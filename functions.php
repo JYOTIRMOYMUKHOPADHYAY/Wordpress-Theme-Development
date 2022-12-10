@@ -12,6 +12,7 @@
 
  add_action( 'wp_enqueue_scripts', "theme_files" );
  
+ add_filter('jpeg_quality', function($arg){return 10;});
 
  //TITLE TAG SUPPORT
  add_theme_support( 'title-tag' );
@@ -20,6 +21,83 @@
  add_theme_support( 'custom-logo' );
 
 
+ function custom_widgets() {
+
+    // CAROSOL START
+    register_sidebar(
+      array(
+        'name' => 'Carosole Image 1',
+        'id' => 'carosol_image_one',
+        'before_widget' => '<div class="carousel-item active">',
+        'after_widget' => '</div>'
+      )
+    );
+  
+    register_sidebar(
+      array(
+        'name' => 'Carosole Image 2',
+        'id' => 'carosol_image_two',
+        'before_widget' => '<div class="carousel-item">',
+        'after_widget' => '</div>'
+      )
+    );
+  
+    register_sidebar(
+      array(
+        'name' => 'Carosole Image 3',
+        'id' => 'carosol_image_three',
+        'before_widget' => '<div class="carousel-item">',
+        'after_widget' => '</div>'
+      )
+    );
+
+
+  // Welcome Section Text
+  register_sidebar(
+    array(
+      'name' => 'Welcome Section Text',
+      'id' => 'welcome_section_banner_text',
+      'before_widget' => '',
+      'after_widget' => '',
+      'before_title' => '',
+      'after_title' => ''
+    )
+  );
+
+  // Welcome Section Image
+  register_sidebar(
+    array(
+      'name' => 'Welcome Section Image',
+      'id' => 'welcome_section_banner_image',
+      'before_widget' => '',
+      'after_widget' => ''
+    )
+  );
+
+
+    // MEET THE LADY BEHIND THE LENS
+    register_sidebar(
+      array(
+        'name' => 'Meet The Lady Image',
+        'id' => 'meet_the_lady_image',
+        'before_widget' => '',
+        'after_widget' => ''
+      )
+    );
+
+// MEET THE LADY BEHIND THE LENS TEXT
+    register_sidebar(
+      array(
+        'name' => 'Meet The Lady Text',
+        'id' => 'meet_the_lady_text',
+        'before_widget' => '',
+        'after_widget' => ''
+      )
+    );
+
+ }
+
+add_action('widgets_init', 'custom_widgets');
  
 // bootstrap 5 wp_nav_menu walker
 class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu

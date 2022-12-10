@@ -12,11 +12,11 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class() ?>>
+<body <?php body_class() ?> style="background-image: url('<?php echo get_theme_file_uri('/images/backbroung_welcome_section.jpg') ?>');">
 
 
 
-<nav class="navbar" aria-label="First navbar example">
+<nav class="navbar" aria-label="First navbar example" style="background-color: white;">
       <div class="container-fluid">
           <div class="header_logo">
              <a href="<?php echo bloginfo('url'); ?>">

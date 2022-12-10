@@ -1,5 +1,5 @@
 <?php get_header() ?>
-
+<!-- 
 <div class="carosol_file">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -24,6 +24,6 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-  </div>
+  </div> -->
 
   <?php get_footer() ?>
